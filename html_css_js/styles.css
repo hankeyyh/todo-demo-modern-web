@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#taskInput {
+    padding: 10px;
+    width: calc(100% - 22px); /* 调整宽度以适应手机屏幕 */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#addTaskButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* 按钮宽度占满屏幕 */
+}
+
+#addTaskButton:hover {
+    background-color: #45a049;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#taskList li {
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+#taskList li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+#clearTasksButton {
+    padding: 10px 20px;
+    background-color: #f44336; /* 红色背景 */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#clearTasksButton:hover {
+    background-color: #d32f2f; /* 鼠标悬停时颜色加深 */
+}
+
+/* 媒体查询，针对小屏幕设备（如手机）进行优化 */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+}
